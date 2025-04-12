@@ -3,6 +3,7 @@ import './globals.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import type { ReactNode } from 'react';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'My Portfolio',
@@ -15,10 +16,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="relative text-white font-sans min-h-screen overflow-x-hidden">
         {/* Background Image */}
         <div className="fixed inset-0 z-0">
-          <img
+          <Image
             src="/Jungle1.png"
             alt="Jungle Background"
-            className="w-full h-full object-cover object-center"
+            fill
+            priority
+            className="object-cover object-center"
           />
         </div>
 

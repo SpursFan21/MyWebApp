@@ -1,22 +1,22 @@
 //my-app\src\app\projects\page.tsx
 'use client';
 import React from 'react';
-import { DiPostgresql } from 'react-icons/di';
+//import { DiPostgresql } from 'react-icons/di';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 export default function ProjectsPage() {
   return (
     <div className="min-h-screen px-6 py-20 text-white bg-transparent">
       <div className="bg-black/80 rounded-2xl p-10 max-w-7xl mx-auto shadow-lg">
-        <h1 className="text-4xl font-bold text-green-300 mb-12 text-center">Projects</h1>
+        <h1 className="text-5xl font-bold text-green-300 mb-12 text-center">Projects</h1>
 
         {/* ScrapeSmith Feature Block */}
         <div className="mb-16">
           <h2 className="text-3xl font-semibold text-purple-300 mb-4 text-center">ScrapeSmith</h2>
-          <p className="text-center text-gray-300 mb-6 italic">
+          <p className="text-center text-xl text-gray-300 mb-6 italic">
             “A blacksmith for the web – forge your data, sharpen your insights.”
           </p>
-          <p className="text-center text-sm text-gray-300 mb-10 max-w-4xl mx-auto">
+          <p className="text-center text-base text-gray-300 mb-10 max-w-4xl mx-auto">
             ScrapeSmith is a professional, cloud-native SaaS platform for scalable web data extraction,
             intelligent data processing, and AI-powered analysis. Built for automation and flexibility,
             it supports both real-time and scheduled workloads—making it ideal for large-scale scraping
@@ -32,20 +32,20 @@ export default function ProjectsPage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             {/* Frontend Card */}
-            <div className="bg-black/60 p-6 rounded-xl shadow-md hover:shadow-xl transition space-y-4 text-center">
+            <div className="bg-black/60 p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-108 transform transition space-y-4 text-center">
               <h3 className="text-xl font-semibold text-green-300">Frontend</h3>
-              <p className="text-sm text-gray-300">
+              <p className="text-base text-gray-300">
                 Built using Next.js (App Router), styled with Tailwind CSS and enhanced with Headless UI, Framer Motion, and custom components.
                 Authentication is managed with JWT and Redux token refreshing.
               </p>
-              <ul className="text-xs text-purple-200 space-y-1">
+              <ul className="text-sm text-purple-200 space-y-1">
                 <li>Framework: Next.js</li>
                 <li>Language: TypeScript</li>
                 <li>Styling: Tailwind CSS, Headless UI</li>
                 <li>State Management: Redux Toolkit</li>
                 <li>HTTP Client: Axios</li>
                 <li>UI: Framer Motion, ShadCN, custom components</li>
-                <li>Auth: JWT (refresh logic with Redux)</li>
+                <li>Auth: Custom JWT</li>
               </ul>
               <a
                 href="https://github.com/SpursFan21/ScrapeSmith-Frontend"
@@ -57,21 +57,21 @@ export default function ProjectsPage() {
             </div>
 
             {/* Backend Card */}
-            <div className="bg-black/60 p-6 rounded-xl shadow-md hover:shadow-xl transition space-y-4 text-center">
+            <div className="bg-black/60 p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-108 transform transition space-y-4 text-center">
               <h3 className="text-xl font-semibold text-green-300">Backend / Microservices</h3>
-              <p className="text-sm text-gray-300">
+              <p className="text-base text-gray-300">
                 A microservice-based architecture powered by Go and Node.js. Services are containerized with Docker
                 and communicate through REST APIs behind Kong API Gateway.
               </p>
-              <ul className="text-xs text-purple-200 space-y-1">
-                <li>Languages: Go (Fiber), Node.js (Express), TypeScript</li>
+              <ul className="text-sm text-purple-200 space-y-1">
+                <li>Languages: Go (Fiber), Node.js (Express), JavaScript</li>
                 <li>Databases: PostgreSQL, MongoDB Atlas</li>
                 <li>Gateway: Kong API Gateway</li>
                 <li>Containerization: Docker</li>
                 <li>Payments: Stripe + voucher support</li>
-                <li>Auth: JWT access & refresh tokens</li>
+                <li>Auth: Custom JWT access & refresh tokens</li>
                 <li>Scheduling: Custom cron/timer job runner</li>
-                <li>AI: GPT-based analysis (WIP)</li>
+                <li>AI: Third-party API based (WIP)</li>
               </ul>
               <a
                 href="https://github.com/SpursFan21/ScrapeSmith-Microservice"
@@ -128,12 +128,13 @@ export default function ProjectsPage() {
             ].map((project, index) => (
                 <div
                 key={index}
-                className="bg-black/60 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col justify-between text-center"
+                className="bg-black/60 p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-110 transform transition duration-300 flex flex-col justify-between text-center"
+
                 >
                 <div>
                     <h3 className="text-xl font-semibold text-green-300 mb-2">{project.title}</h3>
-                    <p className="text-sm text-gray-300 mb-4">{project.description}</p>
-                    <div className="text-xs text-purple-200 mb-4">{project.tech.join(', ')}</div>
+                    <p className="text-base text-gray-300 mb-4">{project.description}</p>
+                    <div className="text-sm text-purple-200 mb-4">{project.tech.join(', ')}</div>
                 </div>
                 <div className="flex justify-center space-x-4 mt-auto">
                     <a href={project.github} target="_blank" className="text-white hover:text-green-300 transition">

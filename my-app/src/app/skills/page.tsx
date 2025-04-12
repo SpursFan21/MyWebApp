@@ -5,15 +5,13 @@ import React from 'react';
 import {
   SiJavascript, SiTypescript, SiPython, SiGo, SiCss3, SiHtml5,
   SiMongodb, SiPostgresql, SiReact, SiNextdotjs, SiNodedotjs,
-  SiTailwindcss, SiDjango, SiAmazon, SiVercel, SiDocker, SiGit
+  SiTailwindcss, SiDjango, SiAmazon, SiVercel, SiDocker, SiGit, SiRedux
 } from 'react-icons/si';
 
 export default function SkillsPage() {
   return (
     <div className="min-h-screen px-6 py-20 text-white bg-transparent">
-
-        <div className="h-12" /> {/* spacer */}
-
+      <div className="h-12" /> {/* spacer */}
 
       <div className="bg-black/80 rounded-2xl p-10 max-w-7xl min-h-[60vh] mx-auto shadow-lg">
         <h1 className="text-4xl font-bold text-green-300 mb-12 text-center">Tech Stack</h1>
@@ -46,6 +44,7 @@ export default function SkillsPage() {
             <SkillCard icon={<SiMongodb />} label="MongoDB" />
             <SkillCard icon={<SiPostgresql />} label="PostgreSQL" />
             <SkillCard icon={<SiGit />} label="Git" />
+            <SkillCard icon={<SiRedux />} label="Redux" />
           </div>
         </section>
       </div>

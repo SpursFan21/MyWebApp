@@ -11,7 +11,6 @@ export default function HomePage() {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
-  // Cycle text every 2 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % roles.length);
@@ -20,29 +19,23 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="flex items-center justify-center min-h-screen -mt-12 px-4">
+    <div className="flex flex-col items-center justify-center min-h-screen -mt-12 px-4">
       <div className="max-w-3xl text-center bg-black/80 p-8 rounded-xl shadow-lg">
-        <h1 className="text-5xl font-bold text-white mb-2">Hi, I’m Duncan</h1>
-        <h2 className="text-3xl font-semibold text-green-300 mb-2">Welcome to my portfolio</h2>
+        <h1 className="text-5xl font-bold text-white mb-2">{'Hi, I’m Duncan'}</h1>
+        <h2 className="text-3xl font-semibold text-green-300 mb-2">{'Welcome to my portfolio'}</h2>
 
-        {/* Carousel Text */}
-        <div className="h-12 mb-6 text-2xl text-white font-medium">
-          <span>I'm currently looking for postgraduate opportunities in </span>
+        <div className="h-12 mb-6 text-2xl text-white font-medium flex items-center justify-center">
+          <span className="whitespace-nowrap">I&apos;m currently looking for postgraduate opportunities in&nbsp;</span>
+
           <span
             key={roles[index]}
-            className="text-purple-300 font-semibold transition-all duration-500 ease-in-out transform scale-100 opacity-100 animate-fade-scale"
+            className="text-purple-300 font-semibold w-[7rem] text-left inline-block transition-all duration-500 ease-in-out animate-fade-scale"
           >
             {roles[index]}
           </span>
         </div>
 
 
-
-        <p className="text-lg text-gray-200 mb-6">
-          I’m a final-year Software Engineering student passionate about building powerful web platforms using modern tools like Next.js, TypeScript, and AWS.
-        </p>
-
-        {/* Resume Dropdown + Social Icons */}
         <div className="flex justify-center items-center space-x-6">
           <Menu
             as="div"
@@ -86,29 +79,34 @@ export default function HomePage() {
             </Transition>
           </Menu>
 
-          {/* Social Icons with enlarged hover */}
-          <a
-            href="https://github.com/SpursFan21"
-            target="_blank"
-            className="text-white hover:text-green-300 text-xl transition-transform transform hover:scale-[1.3]"
-          >
+          <a href="https://github.com/SpursFan21" target="_blank" className="text-white hover:text-green-300 text-xl transition-transform transform hover:scale-[1.3]">
             <FaGithub />
           </a>
-          <a
-            href="https://www.linkedin.com/in/duncan-turner-09b89318a/"
-            target="_blank"
-            className="text-white hover:text-green-300 text-xl transition-transform transform hover:scale-[1.3]"
-          >
+          <a href="https://www.linkedin.com/in/duncan-turner-09b89318a/" target="_blank" className="text-white hover:text-green-300 text-xl transition-transform transform hover:scale-[1.3]">
             <FaLinkedin />
           </a>
-          <a
-            href="mailto:duncanfrederic@gmail.com"
-            className="text-white hover:text-green-300 text-xl transition-transform transform hover:scale-[1.3]"
-          >
+          <a href="mailto:duncanfrederic@gmail.com" className="text-white hover:text-green-300 text-xl transition-transform transform hover:scale-[1.3]">
             <FaEnvelope />
           </a>
         </div>
       </div>
+
+      {/* About Me Section */}
+      <div className="max-w-4xl mt-16 bg-black/80 p-8 rounded-xl shadow-lg text-center">
+        <h2 className="text-3xl font-semibold text-purple-300 mb-4">About Me</h2>
+        <p className="text-xl text-gray-300 leading-relaxed">
+          Hi, I’m Duncan — a final-year Software Engineering student with a strong focus on cloud technologies and modern web development.
+          I specialize in building cloud-native applications and full-stack web solutions that are scalable, efficient, and user-friendly.
+          <br /><br />
+          Currently, I’m developing <strong>ScrapeSmith</strong>, a powerful SaaS platform for automated web scraping, data cleaning,
+          and AI-driven analysis. Alongside this, I work with clients on various freelance projects.
+          <br /><br />
+          Outside of code, I work part-time as a Duty Manager at a fine wine store, balancing hands-on leadership with technical growth.
+          I’m actively seeking full-time opportunities post-graduation where I can contribute as a backend, fullstack, or cloud engineer.
+          Let’s connect and build something great together!
+        </p>
+      </div>
     </div>
   );
 }
+
