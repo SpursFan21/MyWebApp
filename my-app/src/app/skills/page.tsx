@@ -12,10 +12,10 @@ export default function SkillsPage() {
   return (
     <div className="min-h-screen px-6 py-20 text-white bg-transparent">
 
-    <div className="my-16" />
+        <div className="h-12" /> {/* spacer */}
 
 
-      <div className="bg-black/80 rounded-2xl p-10 max-w-7xl mx-auto shadow-lg">
+      <div className="bg-black/80 rounded-2xl p-10 max-w-7xl min-h-[60vh] mx-auto shadow-lg">
         <h1 className="text-4xl font-bold text-green-300 mb-12 text-center">Tech Stack</h1>
 
         {/* Section: Technical Languages */}
@@ -62,12 +62,10 @@ type SkillCardProps = {
 function SkillCard({ icon, label }: SkillCardProps) {
   return (
     <div className="bg-black/50 p-4 rounded-xl shadow-md flex flex-col items-center justify-center hover:scale-105 transform transition duration-300">
-      <div className="text-4xl text-green-300 mb-2">{icon}</div>
-      <p className="text-sm text-center">{label}</p>
+      <div className="w-16 h-16 flex items-center justify-center text-green-300 mb-2 bg-black/70 rounded-lg">
+        <div className="text-3xl">{icon}</div>
+      </div>
+      <p className="text-m font-normal text-center">{label}</p>
     </div>
   );
 }
-
-
-  
-
