@@ -96,10 +96,10 @@ export default function ProjectsPage() {
                 },
                 {
                 title: 'Sol Dance Festival',
-                description: 'Client site for a US music festival built with Next.js and Tailwind CSS. Moving to production on Vercel soon.',
+                description: 'Client site for a US music festival built with Next.js and Tailwind CSS. Currently in production on Vercel, check it out!',
                 tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-                github: 'https://github.com/SpursFan21/sol-dance',
-                demo: 'https://soldance.vercel.app/',
+                github: 'https://github.com/SpursFan21/Sol-Dance-Music-Festival',
+                demo: 'https://sol-dance.vercel.app/',
                 },
                 {
                 title: 'Virtual Vault',
