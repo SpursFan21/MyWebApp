@@ -12,8 +12,6 @@ import {
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Link from 'next/link';
-import * as React from "react";
-
 
 export default function Navbar() {
   return (
