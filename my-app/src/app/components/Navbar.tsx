@@ -35,6 +35,9 @@ export default function Navbar() {
           <Link href="/projects" className="text-white hover:text-green-300 transition-transform transform hover:scale-110">
             Projects
           </Link>
+          <Link href="/transcript" className="text-white hover:text-green-300 transition-transform transform hover:scale-110">
+            Transcript
+          </Link>
           <Link href="https://github.com/SpursFan21" target="_blank">
             <FaGithub className="text-white hover:text-green-300 h-6 w-6 transition-transform duration-200 transform hover:scale-120" />
           </Link>
@@ -72,6 +75,11 @@ export default function Navbar() {
                 <MenuItem as={Link} href="/projects">
                   <div className="block px-4 py-2 text-sm text-gray-900 hover:bg-green-100 rounded-md">
                     Projects
+                  </div>
+                </MenuItem>
+                <MenuItem as={Link} href="/transcript">
+                  <div className='block px-4 py-2 text-sm text-gray-900 hover:bg-green-100 rounded-md'>
+                    Transcript
                   </div>
                 </MenuItem>
                 <MenuItem as={Link} href="https://github.com/SpursFan21" target="_blank">

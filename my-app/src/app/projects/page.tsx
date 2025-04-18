@@ -70,7 +70,8 @@ export default function ProjectsPage() {
                 <li>Containerization: Docker</li>
                 <li>Payments: Stripe + voucher support</li>
                 <li>Auth: Custom JWT access & refresh tokens</li>
-                <li>Scheduling: Custom cron/timer job runner</li>
+                <li>Job Queues: MongoDB-backed async processing with retry support</li>
+                <li>Workers: Background job processors with automatic dispatch</li>
                 <li>AI: Third-party API based (WIP)</li>
               </ul>
               <a
@@ -91,20 +92,20 @@ export default function ProjectsPage() {
                 {
                 title: 'ScrapeCity',
                 description: 'React & Django-based web scraping and data cleaning tool with user accounts, jwt auth, payments and dashboard. A precursor to ScrapeSmith',
-                tech: ['React', 'Django', 'PostgreSQL', 'Vercel', 'AWS'],
+                tech: ['React', 'Django', 'MUI', 'Axios', 'TanStack', 'PostgreSQL', 'Vercel', 'AWS'],
                 github: 'https://github.com/SpursFan21/scrapecity',
                 },
                 {
                 title: 'Sol Dance Festival',
                 description: 'Client site for a US music festival built with Next.js and Tailwind CSS. Currently in production on Vercel, check it out!',
-                tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+                tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Headless UI', 'Motion', 'Vercel'],
                 github: 'https://github.com/SpursFan21/Sol-Dance-Music-Festival',
                 demo: 'https://sol-dance.vercel.app/',
                 },
                 {
                 title: 'Virtual Vault',
                 description: 'Full-stack Flask-based e-commerce app with user accounts, product store, auth, cart, and checkout.',
-                tech: ['Python', 'Flask', 'HTML', 'CSS', 'SQLite', 'Rye'],
+                tech: ['Python', 'Flask', 'JavaScript', 'HTML', 'CSS', 'SQLite', 'Rye'],
                 github: 'https://github.com/SpursFan21/Virtual-Vault',
                 },
                 {
@@ -122,7 +123,7 @@ export default function ProjectsPage() {
                 {
                 title: 'InventoryOne',
                 description: 'Microservices-based inventory system with Go backend, and React frontend. This project is unfinished without plans to complete.',
-                tech: ['Go', 'React', 'TypeScript', 'MongoDB', , 'Docker'],
+                tech: ['Go', 'React', 'TypeScript', 'MongoDB', 'Docker'],
                 github: 'https://github.com/SpursFan21/InventoryOne',
                 },
             ].map((project, index) => (
