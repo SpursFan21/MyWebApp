@@ -28,7 +28,7 @@ export default function TranscriptPage() {
           ></iframe>
         </div>
 
-        {/* Download Button */}
+        {/* Download  Button */}
         <div className="text-center">
           <Link
             href="/transcript_y_1-2.pdf"
