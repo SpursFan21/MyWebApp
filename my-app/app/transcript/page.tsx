@@ -7,7 +7,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 export default function TranscriptPage() {
   return (
-    <div className="min-h-screen bg-black/70 flex flex-col items-center justify-center px-4 sm:px-8 md:px-12 lg:px-24 xl:px-40 py-10 text-white max-w-7xl mx-auto">
+    <div className="min-h-screen bg-black/70 rounded-lg flex flex-col items-center justify-center px-4 sm:px-8 md:px-12 lg:px-24 xl:px-40 py-10 text-white max-w-7xl mx-auto">
       {/* Toast container */}
       <Toaster position="bottom-center" />
 
