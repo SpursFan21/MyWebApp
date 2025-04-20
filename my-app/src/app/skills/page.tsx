@@ -11,7 +11,9 @@ import {
 export default function SkillsPage() {
   return (
     <div className="min-h-screen px-6 py-20 text-white bg-transparent">
-      <div className="h-12" /> {/* spacer */}
+
+      <div className="h-0 sm:h-10 md:h-12 lg:h-16" />  {/* spacer */}
+
 
       <div className="bg-black/80 rounded-2xl p-10 max-w-7xl min-h-[60vh] mx-auto shadow-lg">
         <h1 className="text-4xl font-bold text-green-300 mb-12 text-center">Tech Stack</h1>

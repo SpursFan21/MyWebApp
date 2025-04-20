@@ -67,20 +67,6 @@ export default function CertificationsPage() {
       link: 'https://www.coursera.org/account/accomplishments/verify/6OYVSJHH59SK',
     },
     {
-      logo: '/staveandthief_logo.jpg',
-      title: 'Certified Bourbon Steward',
-      issuer: 'Stave & Thief Society',
-      date: 'Mar 2024',
-      link: 'https://staveandthief.com/certifications/?v=c97b334ffd41',
-    },
-    {
-        logo: '/auckland_council_logo.jpg',
-        title: "Manager's Certificate",
-        issuer: 'Auckland Council',
-        date: 'Dec 2023',
-        link: 'https://www.aucklandcouncil.govt.nz/licences-regulations/business-licences/alcohol-licences-fines/apply-managers-certificate-alcohol/Pages/default.aspx',
-      },
-    {
       logo: '/facebook_logo.jpg',
       title: 'Programming in Python',
       issuer: 'Meta',
@@ -198,6 +184,20 @@ export default function CertificationsPage() {
         date: 'Jul 2023',
         id: '',
         link: 'https://www.credly.com/badges/20cd6db7-23ec-4dfb-9692-9be800d8ec35/linked_in_profile',
+      },
+      {
+        logo: '/staveandthief_logo.jpg',
+        title: 'Certified Bourbon Steward',
+        issuer: 'Stave & Thief Society',
+        date: 'Mar 2024',
+        link: 'https://staveandthief.com/certifications/?v=c97b334ffd41',
+      },
+      {
+        logo: '/auckland_council_logo.jpg',
+        title: "Manager's Certificate",
+        issuer: 'Auckland Council',
+        date: 'Dec 2023',
+        link: 'https://www.aucklandcouncil.govt.nz/licences-regulations/business-licences/alcohol-licences-fines/apply-managers-certificate-alcohol/Pages/default.aspx',
       },
       
   ];

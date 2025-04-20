@@ -39,3 +39,9 @@ body {
 .animate-fade-scale {
   animation: fade-scale 2s ease-in-out;
 }
+
+@layer base {
+  html {
+    overflow-y: scroll !important;
+  }
+}

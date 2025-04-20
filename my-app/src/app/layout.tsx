@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="relative text-white font-sans min-h-screen overflow-x-hidden">
+      <body className="relative text-white font-sans min-h-screen overflow-x-hidden overflow-y-scroll">
         {/* Background Image */}
         <div className="fixed inset-0 z-0">
           <Image
@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             alt="Jungle Background"
             fill
             priority
-            className="object-cover object-center"
+            className="object-cover object-center will-change-transform"
           />
         </div>
 
